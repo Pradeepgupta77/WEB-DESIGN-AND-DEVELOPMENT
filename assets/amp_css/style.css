@@ -202,10 +202,9 @@ main {
 
 .hero_left ul {
   display: flex;
-
-  align-items: center;
-
+  align-items: start;
   justify-content: center;
+  flex-direction: column;
 }
 
 .hero_left ul li {
@@ -407,6 +406,15 @@ main {
 
 #whatMakesDifferent {
   background-color: var(--sec-dark-bg);
+  flex-direction: column;
+}
+#whatMakesDifferent .whatMakesDifferent_text_con .heading_2{
+  text-align: center;
+}
+#whatMakesDifferent .whatMakesDifferent_text_con .normalpara{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .whatMakesDifferent_con {
@@ -423,21 +431,21 @@ main {
   gap: 15px;
 }
 
-.whatMakesDifferent_first_cont {
+/* .whatMakesDifferent_first_cont {
   text-align: left;
 
   margin-bottom: 40px;
 
   width: 32%;
-}
+} */
 
-.whatMakesDifferent_first_cont .heading_2 {
+/* .whatMakesDifferent_first_cont .heading_2 {
   text-align: left;
 
   color: var(--black);
-}
+} */
 
-.whatMakesDifferent_first_cont p {
+/* .whatMakesDifferent_first_cont p {
   text-align: left;
 
   border-left: 5px solid var(--blue);
@@ -451,7 +459,7 @@ main {
   display: inline-block;
 
   line-height: 1.6;
-}
+} */
 
 .whatMakesDifferent_features {
   background-color: var(--white);
@@ -912,7 +920,7 @@ main {
   margin-top: 15px;
 }
 
-.Service_con .service_slider_card {
+/* .Service_con .service_slider_card {
   width: 32%;
 
   min-height: 450px;
@@ -928,9 +936,9 @@ main {
   background-repeat: no-repeat;
 
   background-size: cover;
-}
+} */
 
-.service_slider_card_text {
+/* .service_slider_card_text {
   background-image: url("../amp_images/overlay.png");
 
   background-size: 100% auto;
@@ -956,23 +964,23 @@ main {
   justify-content: end;
 
   border-radius: 0 0 24px 24px;
-}
+} */
 
-.service_slider_card .heading_2 {
+/* .service_slider_card .heading_2 {
   color: var(--white);
 
   font-weight: 300;
 
   padding: 24px;
-}
+} */
 
-.service_slider_card div .heading_3 {
+/* .service_slider_card div .heading_3 {
   color: var(--white);
-}
+} */
 
-.service_slider_card div .normalpara {
+/* .service_slider_card div .normalpara {
   color: var(--white);
-}
+} */
 
 /* Service End */
 
