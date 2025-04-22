@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Best Search Engine Optimization Company</title>
+    <title>WEB DESIGN AND DEVELOPMENT</title>
 
     <!-- CSS  -->
 
@@ -1998,12 +1998,12 @@
 
         let Phone = document.getElementsByClassName("Phone")[0].value;
 
-        let Service = document.getElementById("Service").value;
+        let Website = document.getElementsByClassName("Service")[0].value;
 
         let Message = document.getElementsByClassName("Message")[0].value;
 
         try {
-          await addDoc(collection(db, "SEO"), {
+          await addDoc(collection(db, "web"), {
             Form_type,
 
             Name,
@@ -2011,6 +2011,8 @@
             Email,
 
             Phone,
+
+            Website,
 
             Message,
 
@@ -2051,7 +2053,7 @@
         let Message = document.getElementsByClassName("Message")[1].value;
 
         try {
-          await addDoc(collection(db, "SEO"), {
+          await addDoc(collection(db, "web"), {
             Form_type,
 
             Name,
