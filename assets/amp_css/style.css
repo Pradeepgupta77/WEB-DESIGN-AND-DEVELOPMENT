@@ -721,7 +721,7 @@ main {
 .ourprocess_card_con{
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 20px;
   margin-top: 30px;
@@ -732,13 +732,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 300px; */
-  /* background-color: rgb(166, 162, 162); */
+ position: relative;
 }
 .ourprocess_card_icon{
   width: 80px;
   height: 80px;
-  margin-bottom: -38px;
+  margin-bottom: -30px;
   background-color: var(--white);
   border: 5px solid ;
   border-radius: 50%;
@@ -753,8 +752,9 @@ main {
 }
 .ourprocess_card {
   width: 90%;
+  min-height: 320px;
   background-color: var(--white);
-  padding: 100px 30px;
+  padding: 70px 30px;
   border-top: 5px solid;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
@@ -777,20 +777,16 @@ main {
 .ourprocess_card_con .ourprocess_card_wraper:nth-child(4) .ourprocess_card_icon{
   border-color:#1C89F3 ;
 }
-
-.ourprocess_card::after {
-  content: "";
-  position: absolute;
-  bottom: -35px;
-  left: 0;
-  width: 100%;
-  height: 0;
-  
-}
-
 .ourprocess_card>.heading_3{
   text-align: center;
 }
+.ourprocess_card_wraper >img{
+  position: absolute;
+    top: -17px;
+    z-index: 2;
+    right: -68px;
+}
+
 /* .ourProcess_card_con {
   width: 100%;
 
