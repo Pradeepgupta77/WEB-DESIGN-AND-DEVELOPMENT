@@ -1183,13 +1183,13 @@ main {
   margin-top: 15px;
 } */
 
-.cashStudy_con .cashStudy_tab_con {
+/* .cashStudy_con .cashStudy_tab_con {
   width: 100%;
 
   margin-top: 30px;
-}
+} */
 
-.cashStudy_tab_con .cashStudy_btn_con {
+/* .cashStudy_tab_con .cashStudy_btn_con {
   width: 100%;
 
   display: flex;
@@ -1199,11 +1199,11 @@ main {
   justify-content: center;
 
   gap: 20px;
-}
+} */
 
-.tab .tablinks {
+/* .tab .tablinks {
   width: 33.33%;
-}
+} */
 
 /* .cashStudy_btn_con button {
 
@@ -1257,7 +1257,7 @@ main {
   color: #fff;
 }
 
-.tab {
+/* .tab {
   overflow: hidden;
 
   max-width: 1240px;
@@ -1265,11 +1265,11 @@ main {
   margin: auto;
 
   margin-top: 30px;
-}
+} */
 
 /* Style the buttons inside the tab */
 
-.tab button {
+/* .tab button {
   background-color: inherit;
 
   float: left;
@@ -1293,17 +1293,17 @@ main {
   font-family: poppins;
 
   background-color: #f6f6f6;
-}
+} */
 
 /* Change background color of buttons on hover */
 
-.tab button:hover {
+/* .tab button:hover {
   background-color: var(--light-black);
-}
+} */
 
 /* Create an active/current tablink class */
 
-.tab button.active {
+/* .tab button.active {
   background-color: var(--white);
 
   border-bottom: 1px solid var(--white);
@@ -1311,10 +1311,10 @@ main {
   border-top: 4px solid var(--blue);
 
   padding-bottom: 12px;
-}
+} */
 
 /* Style the tab content */
-
+/* 
 .tabcontent {
   display: none;
 
@@ -1331,11 +1331,11 @@ main {
   overflow: hidden;
 
   border-radius: 0 0 12px 12px;
-}
-
+} */
+/* 
 .tabcontent > img {
   width: 100%;
-}
+} */
 
 /* cash study End */
 
@@ -1914,9 +1914,9 @@ main {
     display: none !important;
   }
 
-  #cashStudy .cashStudy_con .tabcontent {
+  /* #cashStudy .cashStudy_con .tabcontent {
     padding: 15px;
-  }
+  } */
 
   #hero .hero_left ul li img:nth-child(3) {
     width: 90px;
@@ -2434,9 +2434,9 @@ main {
     padding-top: 0;
   }
 
-  #cashStudy .cashStudy_con .tab button {
+  /* #cashStudy .cashStudy_con .tab button {
     font-size: 14px;
-  }
+  } */
 
   #fade {
     margin: 20px 30px;
@@ -2456,21 +2456,21 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  #cashStudy .cashStudy_con .tab {
+  /* #cashStudy .cashStudy_con .tab {
     display: flex;
 
     flex-direction: column;
 
     border-bottom: 1px solid #ddd;
-  }
+  } */
 
-  #cashStudy .cashStudy_con .tab .tablinks {
+  /* #cashStudy .cashStudy_con .tab .tablinks {
     width: 100%;
-  }
+  } */
 
-  #cashStudy .cashStudy_con .tabcontent {
+  /* #cashStudy .cashStudy_con .tabcontent {
     padding: 8px;
-  }
+  } */
 
   .hero_con .hero_right_bg2 {
     top: -75px;
