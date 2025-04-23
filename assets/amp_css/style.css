@@ -1829,11 +1829,11 @@ main {
     display: none;
   }
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card {
     min-width: 200px;
 
     min-height: 310px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -1861,15 +1861,15 @@ main {
     padding: 20px;
   }
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card {
     min-width: 175px;
 
     min-height: 330px;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
     width: 120px;
-  }
+  } */
 
   #ourService .ourService_card_con .ourService_card .ourService_card_img {
     height: 200px;
@@ -1926,19 +1926,19 @@ main {
     margin: 0 11px 20px 11px;
   }
 
-  .ourProcess_card_con {
+  /* .ourProcess_card_con {
     flex-wrap: wrap;
-  }
+  } */
 
-  .ourProcess_card_con .ourProcess_card {
+  /* .ourProcess_card_con .ourProcess_card {
     width: 45%;
-  }
+  } */
 
-  .ourProcess_card_con .ourProcess_card:nth-child(even) {
+  /* .ourProcess_card_con .ourProcess_card:nth-child(even) {
     margin-top: 0;
-  }
+  } */
 
-  .ourProcess_card_con .ourProcess_card {
+  /* .ourProcess_card_con .ourProcess_card {
     display: flex;
 
     flex-direction: column;
@@ -1946,11 +1946,11 @@ main {
     align-items: center;
 
     justify-content: space-between;
-  }
-
+  } */
+/* 
   .ourProcess_card_con .ourProcess_card:last-child {
     width: 100%;
-  }
+  } */
 
   .Service_con .normalpara {
     margin-bottom: 30px;
@@ -1961,7 +1961,7 @@ main {
   }
 
   .hero_left ul li {
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: start;
   }
@@ -1970,12 +1970,15 @@ main {
     width: auto;
   }
 
-  .ourProcess_card_con {
+  /* .ourProcess_card_con {
     margin-top: 30px;
-  }
+  } */
 
   #absolute_whatsapp_btn {
     right: 15px;
+  }
+  .cashStudy_top_con p{
+    padding: 25px;
   }
 }
 
@@ -1988,35 +1991,35 @@ main {
     min-height: 210px;
   }
 
-  #ourProcess .container .ourProcess_cont_main {
+  /* #ourProcess .container .ourProcess_cont_main {
     flex-wrap: wrap;
 
     gap: 35px;
-  }
-
+  } */
+/* 
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(1) {
     width: 30%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(2) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(2) {
     width: 30%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(3) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(3) {
     width: 30%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(4) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(4) {
     width: 47%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
     width: 47%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .boldpera {
+  /* #ourProcess .container .ourProcess_cont_main .boldpera {
     font-size: 16px !important;
-  }
+  } */
 
   #ourService .ourService_card_con .ourService_card .ourService_card_img {
     height: 180px;
@@ -2052,25 +2055,25 @@ main {
     width: 49%;
   }
 
-  #ourProcess .container .ourProcess_cont_main {
+  /* #ourProcess .container .ourProcess_cont_main {
     flex-wrap: wrap;
 
     gap: 35px;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(1),
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(1),
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(2),
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(3) {
     width: 30%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(4) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(4) {
     width: 47%;
-  }
-
+  } */
+/* 
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
     width: 47%;
-  }
+  } */
 
   #whatMakesDifferent .whatMakesDifferent_first_cont {
     width: 49%;
@@ -2149,6 +2152,16 @@ main {
 
     color: var(--black) !important;
   }
+  .ourprocess_card_con{
+    flex-wrap: wrap;
+  }
+  .ourprocess_card_wraper {
+    width: 47%;
+  }
+  .ourprocess_card_wraper img{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -2312,45 +2325,45 @@ main {
     margin: 10px;
   }
 
-  #ourProcess .container .ourProcess_cont_main {
+  /* #ourProcess .container .ourProcess_cont_main {
     gap: 15px;
 
     display: flex;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card {
     min-width: 45%;
 
     width: 48%;
 
     min-height: 265px;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(3),
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(3),
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(4),
   #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
     margin-top: 15px;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card:nth-child(5) {
     width: 100%;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card .step_label {
     width: 100px;
-  }
+  } */
 
-  #ourProcess .container .ourProcess_cont_main .ourProcess_card .normalpara {
+  /* #ourProcess .container .ourProcess_cont_main .ourProcess_card .normalpara {
     font-size: 12px !important;
-  }
-
+  } */
+/* 
   #ourProcess .container .ourProcess_cont_main .boldpera {
     font-size: 14px !important;
-  }
+  } */
 
-  #ourProcess .ourProcess_card .step_icon img {
+  /* #ourProcess .ourProcess_card .step_icon img {
     width: 60px;
-  }
+  } */
 
   #testimonials .slider .testimonial_card {
     min-height: 350px;
@@ -2450,8 +2463,18 @@ main {
     font-size: 18px !important;
   }
 
-  .ourProcess_card_con .ourProcess_card {
+  /* .ourProcess_card_con .ourProcess_card {
     width: 100%;
+  } */
+  .ourprocess_card_wraper {
+    width: 100%;
+  }
+  .cashStudy_con .cashStudy_top_con{
+    flex-wrap: wrap;
+  }
+  .cashStudy_top_con p{
+    width: 100%;
+    min-height: 0;
   }
 }
 
@@ -2524,15 +2547,21 @@ main {
     justify-content: start;
   }
 
-  .ourProcess_card_con {
+  /* .ourProcess_card_con {
     display: none;
-  }
+  } */
 
-  .ourProcess_card_con_slider {
+  /* .ourProcess_card_con_slider {
     display: block !important;
-  }
+  } */
 }
 
+@media screen and (max-width: 540px) {
+  .cashStudy_con .cashStudy_top_con{
+    flex-direction: column;
+    gap: 25px;
+  }
+}
 @media screen and (max-width: 412px) {
   #whatMakesDifferent .whatMakesDifferent_first_cont,
   #whatMakesDifferent .whatMakesDifferent_features {
