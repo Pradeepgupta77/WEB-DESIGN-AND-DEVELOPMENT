@@ -1108,6 +1108,23 @@
             </p>
           </div>
 
+          <div class="cashstudy_slider">
+
+            <div class="cashstudy_card">
+              <h3 class="heading_3">abc</h3>
+              <img src="./assets/amp_images/info-graphics1 Updated.jpg" alt="">
+            </div>
+            <div class="cashstudy_card">
+              <h3 class="heading_3">def</h3>
+              <img src="./assets/amp_images/info-graphics2 Updated.jpg" alt="">
+            </div>
+            <div class="cashstudy_card">
+              <h3 class="heading_3">ghi</h3>
+              <img src="./assets/amp_images/info-graphics1 Updated.jpg" alt="">
+            </div>
+
+          </div>
+
           <div class="tab fade-effect" fade-time="2" fade-direction="zoom">
             <button class="tablinks active" onclick="openCity(event, 'tab1')">
               Skinnotion
@@ -1539,8 +1556,8 @@
 
         // service slider
 
-        $(".service_slider").slick({
-          slidesToShow: 3,
+        $(".cashstudy_slider").slick({
+          slidesToShow: 1,
 
           slidesToScroll: 1,
 
@@ -1615,47 +1632,7 @@
               },
             },
           ],
-        });
-
-        // ourProcess_card_con_slider
-
-        $(".ourProcess_card_con_slider").slick({
-          slidesToShow: 3,
-
-          slidesToScroll: 1,
-
-          infinite: true,
-
-          autoplay: true,
-
-          autoplaySpeed: 2000,
-
-          dots: true,
-
-          arrows: true,
-
-          responsive: [
-            {
-              breakpoint: 1030,
-
-              settings: {
-                slidesToShow: 2,
-
-                slidesToScroll: 1,
-              },
-            },
-
-            {
-              breakpoint: 600,
-
-              settings: {
-                slidesToShow: 1,
-
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+        });        
 
         // Popup
 

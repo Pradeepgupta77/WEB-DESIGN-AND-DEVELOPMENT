@@ -738,7 +738,7 @@ main {
 .ourprocess_card_icon{
   width: 80px;
   height: 80px;
-  margin-bottom: -30px;
+  margin-bottom: -38px;
   background-color: var(--white);
   border: 5px solid ;
   border-radius: 50%;
@@ -751,15 +751,14 @@ main {
   color: var(--black);
   font-weight: 400;
 }
-.ourprocess_card{
+.ourprocess_card {
   width: 90%;
   background-color: var(--white);
-  padding: 40px 10px;
-  border: 5px solid ;
+  padding: 100px 30px;
+  border-top: 5px solid;
   position: relative;
-  border-bottom: none;
-  min-height: 150px;
-  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .ourprocess_card_con .ourprocess_card_wraper:nth-child(1) .ourprocess_card,
@@ -1169,6 +1168,16 @@ main {
 .cashStudy_top_con p span{
   font-size: 36px;
   font-weight: 600;
+}
+.cashstudy_slider .cashstudy_card{
+  width: 100%;
+}
+.cashstudy_card .heading_3 {
+  margin: 0 auto;
+}
+.cashstudy_card img {
+  margin: 30px auto 10px auto;
+  width: 100%;
 }
 /* .cashStudy_con .normalpara {
   text-align: center;
