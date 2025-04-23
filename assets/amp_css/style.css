@@ -402,119 +402,6 @@ main {
 
 /*hero section  end */
 
-/* Our Services Start */
-
-.ourService_con .heading_2 {
-  text-align: center;
-}
-
-.ourService_con .normalpara {
-  text-align: center;
-
-  margin-top: 15px;
-}
-
-#ourService .ourService_card_con {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 15px;
-
-  margin-top: 30px;
-}
-
-.ourService_card {
-  transition: transform 0.3s ease;
-
-  border-bottom: 3px solid #ccc;
-}
-
-.ourService_card:hover {
-  transform: scale(0.95);
-}
-
-.ourService_card h3 {
-  color: #000;
-
-  margin-top: 15px;
-
-  line-height: 1.3;
-
-  margin-left: 25px;
-}
-
-.ourService_card_con .ourService_card .normalpara {
-  line-height: 1.3;
-
-  margin: 5px 0 20px 25px;
-
-  text-align: left;
-}
-
-.ourService_card_con .ourService_card .ourService_card_img {
-  background-position: center center;
-
-  background-repeat: no-repeat;
-
-  background-size: cover;
-
-  width: 100%;
-
-  height: 250px;
-
-  border: none;
-
-  border-radius: 15px;
-}
-
-.ourService_card_con .ourService_card:nth-child(1) .ourService_card_img {
-  background-image: url("../amp_images/service1.png");
-}
-
-.ourService_card_con .ourService_card:nth-child(2) .ourService_card_img {
-  background-image: url("../amp_images/service2.png");
-}
-
-.ourService_card_con .ourService_card:nth-child(3) .ourService_card_img {
-  background-image: url("../amp_images/service3.png");
-}
-
-.ourService_card_con .ourService_card:nth-child(4) .ourService_card_img {
-  background-image: url("../amp_images/service4.png");
-}
-
-.ourService_card_con .ourService_card:nth-child(5) .ourService_card_img {
-  background-image: url("../amp_images/service5.png");
-}
-
-.ourService_card_con .ourService_card:nth-child(6) .ourService_card_img {
-  background-image: url("../amp_images/service6.png");
-}
-
-.ourService_card_con .ourService_card {
-  background-color: #f1f1f1;
-
-  border-radius: 15px;
-
-  width: 32%;
-
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  
-}
-
-.ourService_card:hover {
-  /* background-color: #ddd; */
-
-  border-bottom: 3px solid #ff7a28;
-}
-
-/* Our Services End */
-
 /* What Makes Us Different? start */
 
 #whatMakesDifferent {
@@ -818,7 +705,7 @@ main {
 #ourProcess {
   background: var(--sec-dark-bg);
 }
-#ourProcess .ourProcess_con .heading_2{
+#ourProcess .ourProcess_con>.heading_2{
   text-align: center;
 }
 #ourProcess .ourProcess_con .normalpara{
@@ -826,26 +713,34 @@ main {
   margin-top: 15px;
 }
 /**/
+.ourProcess_card_con{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .ourProcess_card {
   position: relative;
-  width: 300px;
-  height: 360px;
-  margin: 100px auto;
+    width: 100%;
+    height: 360px;
+    margin: 100px auto;
+    display: flex
+;
 }
 
 .ourProcess_card::before {
   content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(145deg, #e57373, #ef9a9a);
-  border-radius: 20px;
-  transform: skewY(-4deg);
-  transform-origin: bottom left;
-  z-index: 0;
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    /* top: 20px; */
+    left: 20px;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(145deg, #e57373, #ef9a9a);
+    border-radius: 20px;
+    /* transform: skewY(-4deg); */
+    transform-origin: bottom left;
+    z-index: 0;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
 }
 
 .ourProcess_card .card {
@@ -853,10 +748,16 @@ main {
   background: white;
   border-radius: 20px;
   height: 100%;
+  min-width: 280px;
   padding: 30px 20px 70px;
   z-index: 1;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: flex
+;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .ourProcess_card .content {
@@ -880,11 +781,20 @@ main {
   height: 60px;
   background-color: #a52a2a;
   border-radius: 50%;
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
+  margin: 0 50%;
   transform: translateX(-50%);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
+.circle .heading_2{
+  color: var(--white) !important;
+  font-weight: 400;
+  font-size: 32px !important;
+  /* margin-top: -20px; */
+}
+
+
 
 
 /* .ourProcess_card_con {
