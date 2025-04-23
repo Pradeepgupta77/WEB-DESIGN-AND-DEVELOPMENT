@@ -576,7 +576,8 @@ main {
 }
 
 .ourClient_img6,
-.ourClient_img12 {
+.ourClient_img12,
+.ourClient_img18 {
   border-bottom: 1px solid var(--light-black);
 }
 
@@ -584,17 +585,22 @@ main {
 .ourClient_img8,
 .ourClient_img9,
 .ourClient_img10,
-.ourClient_img11 {
+.ourClient_img11,
+.ourClient_img13,
+.ourClient_img14,
+.ourClient_img15,
+.ourClient_img16,
+.ourClient_img17{
   border-right: 1px solid var(--light-black);
 
   border-bottom: 1px solid var(--light-black);
 }
 
-.ourClient_img13,
-.ourClient_img14,
-.ourClient_img15,
-.ourClient_img17,
-.ourClient_img16 {
+.ourClient_img19,
+.ourClient_img20,
+.ourClient_img21,
+.ourClient_img22,
+.ourClient_img23 {
   border-right: 1px solid var(--light-black);
 }
 
@@ -712,91 +718,80 @@ main {
   text-align: center;
   margin-top: 15px;
 }
-/**/
-.ourProcess_card_con{
+.ourprocess_card_con{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
 }
-.ourProcess_card {
-  position: relative;
-    width: 100%;
-    height: 360px;
-    margin: 100px auto;
-    display: flex
-;
-}
-
-.ourProcess_card::before {
-  content: "";
-    position: absolute;
-    /* top: 20px; */
-    left: 20px;
-    width: 90%;
-    height: 100%;
-    background: linear-gradient(145deg, #e57373, #ef9a9a);
-    border-radius: 20px;
-    /* transform: skewY(-4deg); */
-    transform-origin: bottom left;
-    z-index: 0;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
-}
-
-.ourProcess_card .card {
-  position: relative;
-  background: white;
-  border-radius: 20px;
-  height: 100%;
-  min-width: 280px;
-  padding: 30px 20px 70px;
-  z-index: 1;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex
-;
-  /* align-items: center; */
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.ourProcess_card .content {
-  text-align: center;
-}
-
-.ourProcess_card .card h3 {
-  font-size: 18px;
-  margin: 0;
-  font-weight: bold;
-}
-
-.ourProcess_card .card p {
-  font-size: 14px;
-  margin-top: 15px;
-  color: #333;
-}
-
-.ourProcess_card .circle {
-  width: 60px;
-  height: 60px;
-  background-color: #a52a2a;
-  border-radius: 50%;
-  margin: 0 50%;
-  transform: translateX(-50%);
+.ourprocess_card_wraper{
+  width: 33.33%;
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 300px; */
+  /* background-color: rgb(166, 162, 162); */
+}
+.ourprocess_card_icon{
+  width: 80px;
+  height: 80px;
+  margin-bottom: -30px;
+  background-color: var(--white);
+  border: 5px solid ;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.circle .heading_2{
-  color: var(--white) !important;
+.ourprocess_card_icon .heading_2{
+  color: var(--black);
   font-weight: 400;
-  font-size: 32px !important;
-  /* margin-top: -20px; */
+}
+.ourprocess_card{
+  width: 90%;
+  background-color: var(--white);
+  padding: 40px 10px;
+  border: 5px solid ;
+  position: relative;
+  border-bottom: none;
+  min-height: 150px;
+  position: relative;
 }
 
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(1) .ourprocess_card,
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(1) .ourprocess_card_icon{
+  border-color: #C30D4E;
+}
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(2) .ourprocess_card,
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(2) .ourprocess_card_icon{
+  border-color: #F88E00;
+}
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(3) .ourprocess_card,
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(3) .ourprocess_card_icon{
+  border-color:#1ECEBC ;
+}
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(4) .ourprocess_card,
+.ourprocess_card_con .ourprocess_card_wraper:nth-child(4) .ourprocess_card_icon{
+  border-color:#1C89F3 ;
+}
 
+.ourprocess_card::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  
+}
 
-
+.ourprocess_card>.heading_3{
+  text-align: center;
+}
 /* .ourProcess_card_con {
   width: 100%;
 
@@ -1161,16 +1156,15 @@ main {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+  gap: 50px;
 }
 .cashStudy_top_con p{
   flex: 1 1 33.33%;
   text-align: center;
-  padding: 0 15px;
-  /* height: 100%; */
-}
-.cashStudy_top_con p:nth-child(1),
-.cashStudy_top_con p:nth-child(2){
-  border-right: 1px solid black;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 230px;
 }
 .cashStudy_top_con p span{
   font-size: 36px;
