@@ -406,10 +406,12 @@ main {
     cursor: pointer;
     padding: 10px 30px;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 18px;
     font-family: poppins;
     border-bottom: 2px solid transparent;
     margin: 0 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 /* Change background color of buttons on hover */
@@ -443,14 +445,14 @@ main {
 
 
 .ourClient_img_con .ourClient_img_div {
-  width: 23%;
+  width: 18%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 24px;
   background: var(--white);
 }
-#tab2 .ourClient_img_con .ourClient_img_div {
+/* #tab2 .ourClient_img_con .ourClient_img_div {
   width: 18%;
-}
+} */
 
 .ourClient_img_div img {
   width: 100%;
@@ -458,12 +460,14 @@ main {
   padding: 15px;
 }
 
-.ourClient_img_div img:hover {
+.ourClient_img_div:hover img {
   transform: translateY(-5px);
 }
 .ourClient_img_div .heading_3{
   text-align: center;
   margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 
@@ -585,6 +589,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .ourprocess_card_icon .heading_2 {
@@ -601,6 +606,9 @@ main {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ourprocess_card_wraper .ourprocess_card:hover .ourprocess_card_icon {
+  background: red;
 }
 
 .ourprocess_card_con .ourprocess_card_wraper:nth-child(1) .ourprocess_card,
@@ -704,12 +712,16 @@ main {
 .testimonial_card p {
   text-align: start;
 }
+.testimonial_card>p {
+  min-height: 230px;
+}
 
 .testimonial_card .testimonial_card_user_details {
   border-top: 1px solid #ddd;
   position: relative;
   padding-top: 25px;
   width: 100%;
+  min-height: 135px;
 }
 
 .slick-initialized .slick-slide {
@@ -758,6 +770,9 @@ main {
 /* Testimonials End */
 
 /* cash study Start */
+#cashStudy{
+  padding: 60px 0;
+}
 
 .cashStudy_con .heading_2 {
   text-align: center;
@@ -777,10 +792,10 @@ main {
 .cashStudy_top_con p {
   flex: 1 1 33.33%;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  min-height: 230px;
+  /* min-height: 230px; */
 }
 
 .cashStudy_top_con p span {
@@ -788,19 +803,19 @@ main {
   font-weight: 600;
 }
 
-.cashstudy_slider .cashstudy_card {
+/* .cashstudy_slider .cashstudy_card {
   width: 100%;
   border: 1px solid black;
-}
+} */
 
-.cashstudy_card .heading_3 {
+/* .cashstudy_card .heading_3 {
   margin: 0 auto;
-}
+} */
 
-.cashstudy_card img {
+/* .cashstudy_card img {
   margin: 30px auto 10px auto;
   width: 100%;
-}
+} */
 
 .cashStudy_blocks {
   padding-top: 40px;
@@ -831,6 +846,48 @@ main {
 }
 
 /* cash study End */
+
+/* portfolio start  */
+#portfolio{
+  padding: 60px 0;
+}
+#portfolio .portfolio_con {
+  width: 100%;
+  margin: auto auto;
+}
+.portfolio_con>.heading_2{
+  text-align: center;
+}
+.portfolio_con .portfolio_top_con{
+  /* background-color: red; */
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.portfolio_top_con p{
+  flex: 1 1 33.33%;
+  text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.portfolio_top_con p span {
+  font-size: 36px;
+  font-weight: 600;
+}
+.portfolio_card{
+  margin:  auto 15px;
+  /* overflow: hidden; */
+  border-radius: 24px;
+  border: 1px solid black;
+  background-image: url('../amp_images/1.jpg');
+}
+.portfolio_card img{
+  width: 100%;
+}
+/* portfolio END  */
 
 /* Strategy Call Section Start */
 
