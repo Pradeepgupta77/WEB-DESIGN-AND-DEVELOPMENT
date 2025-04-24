@@ -858,7 +858,7 @@ main {
 
 .strategy_right .heading_2,
 .strategy_right .normalpara {
-  color: var(--white);
+  color: var(--black);
 }
 
 #strategyCall .strategy_con .strategy_left {
