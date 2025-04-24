@@ -27,7 +27,7 @@ body {
   --light-black: #ddd;
   --sec-dark-bg: #f4f4f4;
   --sec-light-bg: #f9f9f9;
-  --btn-gradient: linear-gradient(to right, #ff6a00, #a600ff);
+  --btn-gradient: linear-gradient(to right, orange, purple);
 }
 
 /* main section start */
@@ -105,7 +105,7 @@ main {
 /* hero section start*/
 
 #hero {
-  background-image: url("../amp_images/Hero\ baner.jpg");
+  background-image: url("../amp_images/Hero\ baner\ 2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,7 +360,9 @@ main {
 /* What Makes Us Different? End */
 
 /* Our Clients section start*/
-
+#ourClient{
+  background: var(--sec-light-bg);
+}
 .ourClient_con {
   display: flex;
   align-items: center;
@@ -380,6 +382,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .tab {
@@ -396,74 +399,58 @@ main {
 
 .tab button {
   background-color: inherit;
-
   float: left;
-
   border: none;
-
   outline: none;
-
   cursor: pointer;
-
   padding: 14px 16px;
-
   transition: 0.3s;
-
   font-size: 16px;
-
-  border: 1px solid var(--dark-white);
-
+  /* border: 1px solid var(--dark-white); */
   width: 25%;
-
   font-family: poppins;
-
-  background-color: #f6f6f6;
+  border-bottom: 2px solid transparent;
+  /* background-color: #f6f6f6; */
 }
 
 /* Change background color of buttons on hover */
 
 .tab button:hover {
-  background-color: var(--light-black);
+  border-bottom: 2px solid var(--blue);
 }
 
 /* Create an active/current tablink class */
 
 .tab button.active {
-  background-color: var(--white);
+  /* background-color: var(--white); */
 
-  border-bottom: 1px solid var(--white);
+  border-bottom: 4px solid var(--blue);
 
-  border-top: 4px solid var(--blue);
+  /* border-top: 4px solid var(--blue); */
 
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
 }
 
 /* Style the tab content */
 
 .tabcontent {
   display: none;
-
   padding: 30px;
-
-  border: 1px solid var(--dark-white);
-
   border-top: none;
-
   max-width: 1240px;
-
   margin: auto;
-
   overflow: hidden;
+  border-radius: 0 0 12px 12px;}
 
-  border-radius: 0 0 12px 12px;
-}
-
-.tabcontent > img {
-  width: 100%;
-}
 
 .ourClient_img_con .ourClient_img_div {
-  width: 16%;
+  width: 23%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  background: var(--white);
+}
+#tab2 .ourClient_img_con .ourClient_img_div {
+  width: 18%;
 }
 
 .ourClient_img_div img {
@@ -475,50 +462,18 @@ main {
 .ourClient_img_div img:hover {
   transform: translateY(-5px);
 }
-
-.ourClient_img1,
-.ourClient_img2,
-.ourClient_img3,
-.ourClient_img4,
-.ourClient_img5 {
-  border-bottom: 1px solid var(--light-black);
-  border-right: 1px solid var(--light-black);
+.ourClient_img_div .heading_3{
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-.ourClient_img6,
-.ourClient_img12,
-.ourClient_img18 {
-  border-bottom: 1px solid var(--light-black);
-}
-
-.ourClient_img7,
-.ourClient_img8,
-.ourClient_img9,
-.ourClient_img10,
-.ourClient_img11,
-.ourClient_img13,
-.ourClient_img14,
-.ourClient_img15,
-.ourClient_img16,
-.ourClient_img17 {
-  border-right: 1px solid var(--light-black);
-  border-bottom: 1px solid var(--light-black);
-}
-
-.ourClient_img19,
-.ourClient_img20,
-.ourClient_img21,
-.ourClient_img22,
-.ourClient_img23 {
-  border-right: 1px solid var(--light-black);
-}
 
 /* Our Clients section End*/
 
 /* SEO Diff start */
 
 #seoDiff {
-  background-image: url("../amp_images/bg\ Image.jpg");
+  background-image: url("../amp_images/bg\ Image\ 2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
