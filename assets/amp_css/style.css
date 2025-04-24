@@ -22,7 +22,7 @@ body {
 :root {
   --white: #fff;
   --black: #000;
-  --blue: #6903dc;
+  --blue: #14032C;
   --dark-white: #ccc;
   --light-black: #ddd;
   --sec-dark-bg: #f4f4f4;
@@ -1095,7 +1095,7 @@ main {
 /* footer section start  */
 
 #footer_sec {
-  background: #0f0c37;
+  background: var(--blue);
   z-index: 2;
 }
 
