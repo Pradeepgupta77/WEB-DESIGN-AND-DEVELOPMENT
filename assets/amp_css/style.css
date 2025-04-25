@@ -102,6 +102,76 @@ main {
 
 /* whatsApp btn End */
 
+/* mobile flowting btn start  */
+.floating-btn-container {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  z-index: 999;
+}
+
+.main-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.action-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.action-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.show .whatsapp-btn {
+  transform: translateY(-70px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-btn i{
+  color: var(--white);
+    font-size: 36px;
+}
+.show .call-btn {
+  transform: translateY(-140px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-btn i{
+  color: var(--white);
+    font-size: 32px;
+}
+/* mobile flowting btn End  */
+
 /* hero section start*/
 
 #hero {
@@ -1409,6 +1479,23 @@ main {
   /* .cashStudy_top_con p {
     padding: 25px;
   } */
+  .tab button{
+    padding: 10px 20px;
+  }
+  .testimonial_card>p{
+    min-height: 180px;
+  }
+  .testimonial_card .testimonial_card_user_details{
+    min-height: 120px;
+  }
+  .portfolio_con .portfolio_top_con{
+    padding: 0 30px;
+  }
+  .portfolio_top_con p{
+    padding: 15px;
+    min-height: 160px;
+  }
+
 }
 
 @media screen and (max-width: 932px) {
@@ -1530,6 +1617,12 @@ main {
   .ourprocess_card_wraper img {
     display: none;
   }
+  .tab button{
+    margin: auto 10px;
+  }
+  .ourprocess_card {
+    min-height: 230px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1589,7 +1682,7 @@ main {
   }
 
   #ourClient .ourClient_img_con .ourClient_img_div {
-    width: 33%;
+    width: 48%;
   }
 
   #ourClient .ourClient_img_con .ourClient_img_div img {
@@ -1759,7 +1852,16 @@ main {
   .ourprocess_card_wraper {
     width: 100%;
   }
-
+  .tab button{
+    padding: 5px;
+    font-size: 14px;
+  }
+  .portfolio_con .portfolio_top_con{
+    flex-wrap: wrap;
+  }
+  .portfolio_top_con p{
+    min-height: 180px;
+  }
   /* .cashStudy_con .cashStudy_top_con {
     flex-wrap: wrap;
   } */
@@ -1830,7 +1932,15 @@ main {
     gap: 25px;
   } */
 }
-
+@media screen and (max-width:450px){
+  .tab button {
+    margin: 10px 30px;
+}
+.ourClient_img_div {
+  width: 45% !important;
+}
+  
+}
 @media screen and (max-width: 412px) {
   #whatMakesDifferent .whatMakesDifferent_first_cont,
   #whatMakesDifferent .whatMakesDifferent_features {
@@ -1854,6 +1964,7 @@ main {
   #ourService .ourService_card h3 {
     font-size: 12px !important;
   }
+
 }
 
 @media screen and (max-width: 370px) {
