@@ -108,6 +108,8 @@ main {
   bottom: 40px;
   left: 20px;
   z-index: 999;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
 }
 
 .main-btn {
