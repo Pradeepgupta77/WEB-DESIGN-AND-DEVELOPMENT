@@ -1553,11 +1553,12 @@
           </div>
 
           <div class="portfolio_slider">
+
             <div class="portfolio_card port1">
               <div class="portfolio_card_info">
                 <h3 class="heading_3">Lorem, ipsum dolor.</h3>
-                <h2 class="heading_2">Lorem, ipsum dolor.</h2>
-                <a href="#">
+                <h2 class="heading_2">port popup</h2>
+                <a href="#" data-img="./assets/amp_images/webdes.jpg">
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
@@ -1567,7 +1568,7 @@
               <div class="portfolio_card_info">
                 <h3 class="heading_3">Lorem, ipsum dolor.</h3>
                 <h2 class="heading_2">Lorem, ipsum dolor.</h2>
-                <a href="#">
+                <a href="#" data-img="./assets/amp_images/webdes.jpg">
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
@@ -1577,7 +1578,7 @@
               <div class="portfolio_card_info">
                 <h3 class="heading_3">Lorem, ipsum dolor.</h3>
                 <h2 class="heading_2">Lorem, ipsum dolor.</h2>
-                <a href="#">
+                <a href="#" data-img="./assets/amp_images/webdes.jpg">
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
@@ -1587,7 +1588,7 @@
               <div class="portfolio_card_info">
                 <h3 class="heading_3">Lorem, ipsum dolor.</h3>
                 <h2 class="heading_2">Lorem, ipsum dolor.</h2>
-                <a href="#">
+                <a href="#" data-img="./assets/amp_images/webdes.jpg">
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
@@ -1597,7 +1598,7 @@
               <div class="portfolio_card_info">
                 <h3 class="heading_3">Lorem, ipsum dolor.</h3>
                 <h2 class="heading_2">Lorem, ipsum dolor.</h2>
-                <a href="#">
+                <a href="#" data-img="./assets/amp_images/webdes.jpg">
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
@@ -1828,6 +1829,19 @@
 
       <!-- section popup End  -->
 
+      <!-- portfolio section popup start  -->
+
+      <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closePopup">&times;</span>
+          <div class="popup-img-wrapper">
+            <img id="popupImage" src="" alt="Project Preview" />
+          </div>
+        </div>
+      </div>
+
+      <!-- portfolio section popup End  -->
+
       <!-- footer section start -->
 
       <footer data-scroll-section id="footer_sec" class="sec">
@@ -2056,6 +2070,7 @@
 
           closebutton: true,
         });
+        // Portfolio Popup
       });
     </script>
 
@@ -2170,8 +2185,6 @@
       });
     </script>
 
-    <!-- cash study start -->
-
     <!-- mobile flowting btn js start  -->
     <script>
       const mainBtn = document.getElementById('mainBtn');
@@ -2182,6 +2195,37 @@
       });
     </script>
     <!-- mobile flowting btn js end  -->
+
+    <!-- portfolio section popup Start -->
+    <script>
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closePopup");
+      const popupImage = document.getElementById("popupImage");
+      const openBtns = document.querySelectorAll(".portfolio_card a");
+    
+      openBtns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const imgSrc = this.getAttribute("data-img");
+          popupImage.src = imgSrc;
+          popup.style.display = "flex";
+        });
+      });
+    
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+        popupImage.src = ""; // Optional: clear image on close
+      });
+    
+      window.addEventListener("click", function (e) {
+        if (e.target === popup) {
+          popup.style.display = "none";
+          popupImage.src = "";
+        }
+      });
+    </script>
+    
+    <!-- portfolio section popup End -->
 
     <!-- Firebase Form Submission -->
 
