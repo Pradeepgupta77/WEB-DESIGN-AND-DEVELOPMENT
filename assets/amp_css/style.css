@@ -942,6 +942,10 @@ main {
   color: var(--white);
   /* font-weight: 300; */
 }
+#portfolio .portfolio_con .slick-next,
+  #portfolio .portfolio_con .slick-prev {
+    display: none !important;
+  }
 /* portfolio END  */
 
 /* Strategy Call Section Start */
