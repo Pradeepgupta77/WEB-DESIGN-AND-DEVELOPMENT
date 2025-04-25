@@ -770,16 +770,16 @@ main {
 /* Testimonials End */
 
 /* cash study Start */
-#cashStudy{
+/* #cashStudy{
   padding: 60px 0;
-}
-
+} */
+/* 
 .cashStudy_con .heading_2 {
   text-align: center;
 
   color: var(--black);
-}
-
+} */
+/* 
 .cashStudy_con .cashStudy_top_con {
   width: 100%;
   display: flex;
@@ -787,21 +787,20 @@ main {
   justify-content: space-between;
   margin: 30px auto;
   gap: 50px;
-}
+} */
 
-.cashStudy_top_con p {
+/* .cashStudy_top_con p {
   flex: 1 1 33.33%;
   text-align: center;
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  /* min-height: 230px; */
-}
+} */
 
-.cashStudy_top_con p span {
+/* .cashStudy_top_con p span {
   font-size: 36px;
   font-weight: 600;
-}
+} */
 
 /* .cashstudy_slider .cashstudy_card {
   width: 100%;
@@ -817,21 +816,21 @@ main {
   width: 100%;
 } */
 
-.cashStudy_blocks {
+/* .cashStudy_blocks {
   padding-top: 40px;
-}
+} */
 
-.cashStudy_block {
+/* .cashStudy_block {
   display: none;
 
   text-align: center;
-}
+} */
 
-.cashStudy_block.active {
+/* .cashStudy_block.active {
   display: block;
-}
+} */
 
-.cashStudy_block img {
+/* .cashStudy_block img {
   max-width: 1200px;
 
   width: 100%;
@@ -839,11 +838,11 @@ main {
   border-radius: 20px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.cashStudy_btn_con .normalBtn.active {
+/* .cashStudy_btn_con .normalBtn.active {
   color: #fff;
-}
+} */
 
 /* cash study End */
 
@@ -880,22 +879,34 @@ main {
 .portfolio_card{
   margin:  auto 15px;
   min-height: 450px !important; 
-  /* overflow: hidden; */
   margin-bottom: 50px;
   border-radius: 24px;
-  /* border: 1px solid black; */
-  background-image: url('../amp_images/1.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+}
+.port1{
+  background-image: url('../amp_images/1.jpg');
+}
+.port2{
+  background-image: url('../amp_images/2.jpg');
+}
+.port3{
+  background-image: url('../amp_images/3.jpg');
+}
+.port4{
+  background-image: url('../amp_images/4.jpg');
+}
+.port5{
+  background-image: url('../amp_images/3.jpg');
 }
 .portfolio_card .portfolio_card_info{
   position: absolute;
   bottom: -40px;
   left: 15px;
   height: auto;
-  padding: 24px;
+  padding: 25px 100px 25px 25px;
   background: var(--white);
   border-radius: 24px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
@@ -907,9 +918,10 @@ main {
 .portfolio_card_info .heading_3{
   font-weight: 400;
   color: #F4960C;
+  font-size: 16px;
 }
 .portfolio_card_info .heading_2{
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 500;
   margin-top: 10px;
 }
@@ -917,35 +929,19 @@ main {
   position: absolute;
     top: 10px;
     right: 10px;
-    transform: rotate(-120deg);
+    background: #F4960C;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.drop {
-  background: #F4960C;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative
+.portfolio_card_info a i{
+  font-size: 36px;
+  color: var(--white);
+  /* font-weight: 300; */
 }
-
-/* .drop:before { */
-.drop::after {
-  content: "";
-    position: absolute;
-    top: -87%;
-    left: 50%;
-    border: 20px solid transparent;
-    border-bottom: 30px solid #F4960C;
-    transform: translateX(-50%);
-    z-index: -1;
-}
-.drop i{
-  z-index: 3;
-  font-size: 32px;
-  /* transform: rotate(); */
-}
-/* .portfolio_card img{
-  width: 450px;
-} */
 /* portfolio END  */
 
 /* Strategy Call Section Start */
@@ -1406,9 +1402,9 @@ main {
     right: 15px;
   }
 
-  .cashStudy_top_con p {
+  /* .cashStudy_top_con p {
     padding: 25px;
-  }
+  } */
 }
 
 @media screen and (max-width: 932px) {
@@ -1760,14 +1756,14 @@ main {
     width: 100%;
   }
 
-  .cashStudy_con .cashStudy_top_con {
+  /* .cashStudy_con .cashStudy_top_con {
     flex-wrap: wrap;
-  }
+  } */
 
-  .cashStudy_top_con p {
+  /* .cashStudy_top_con p {
     width: 100%;
     min-height: 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -1825,10 +1821,10 @@ main {
 }
 
 @media screen and (max-width: 540px) {
-  .cashStudy_con .cashStudy_top_con {
+  /* .cashStudy_con .cashStudy_top_con {
     flex-direction: column;
     gap: 25px;
-  }
+  } */
 }
 
 @media screen and (max-width: 412px) {
