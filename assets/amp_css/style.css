@@ -1797,6 +1797,9 @@ main {
   .portfolio_top_con p {
     min-height: 180px;
   }
+  .portfolio_card {
+    min-height: 350px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1827,6 +1830,9 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: start;
+  }
+  .portfolio_card {
+    min-height: 230px !important;
   }
 }
 
