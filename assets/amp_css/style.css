@@ -854,7 +854,7 @@ main {
 }
 .portfolio_card {
   margin: auto 15px;
-  min-height: 450px !important;
+  min-height: 550px !important;
   margin-bottom: 50px;
   /* border-radius: 24px; */
   background-size: cover;
@@ -1801,7 +1801,7 @@ main {
     min-height: 180px;
   }
   .portfolio_card {
-    min-height: 550px !important;
+    min-height: 450px !important;
   }
 }
 
