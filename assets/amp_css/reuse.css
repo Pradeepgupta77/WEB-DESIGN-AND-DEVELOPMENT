@@ -136,6 +136,12 @@ li {
     font-size: 14px !important;
   }
 }
+@media screen and (max-width: 860px) {
+  .normalBtn {
+    padding: 15px 32px !important;
+    font-size: 14px !important;
+ }
+}
 @media screen and (max-width: 844px) {
   .sec {
     padding: 40px 20px;
@@ -188,6 +194,11 @@ li {
 @media screen and (max-width: 370px) {
   .normalBtn {
     padding: 12px 12px !important;
+  }
+}
+@media screen and (max-width: 359px) {
+  .normalBtn {
+    padding: 10px 10px !important;
   }
 }
 /* resubale class and id End */

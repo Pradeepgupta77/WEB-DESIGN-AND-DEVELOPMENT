@@ -1350,9 +1350,36 @@ main {
 
 /* Responsiveness Start */
 
+@media screen and (max-width: 1920px) {
+  .portfolio_card {
+    min-height: 450px !important;
+  }
+}
+
 @media screen and (max-width: 1180px) {
   #absolute_contact_btn {
     display: none;
+  }
+
+  .ourprocess_card {
+    min-height: 350px;
+  }
+
+  .slider .testimonial_card {
+      min-height: 475px;
+  }
+  
+  .portfolio_card {
+    min-height: 350px !important;
+  }
+
+  #portfolio .portfolio_con .slick-prev, 
+  #portfolio .portfolio_con .slick-next, 
+  #seoDiff .slick-prev.slick-arrow, 
+  #seoDiff .slick-next.slick-arrow, 
+  #testimonials .slick-next.slick-arrow, 
+  #testimonials .slick-prev.slick-arrow {
+    display: none !important;
   }
 }
 
@@ -1465,6 +1492,9 @@ main {
     padding: 15px;
     min-height: 160px;
   }
+  .portfolio_card {
+    min-height: 560px !important;
+  }
 }
 
 @media screen and (max-width: 932px) {
@@ -1479,6 +1509,12 @@ main {
   #ourService .ourService_card_con .ourService_card .ourService_card_img {
     height: 180px;
     min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio_card {
+    min-height: 470px !important;
   }
 }
 
@@ -1587,6 +1623,9 @@ main {
   .ourprocess_card {
     min-height: 230px;
   }
+  .portfolio_card {
+    min-height: 450px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1614,6 +1653,12 @@ main {
   #ourService .ourService_card_con .ourService_card .ourService_card_img {
     height: 200px;
     min-width: 200px;
+  }
+  #ourClient .ourClient_con .tabcontent {
+    padding: 0;
+  }
+  .portfolio_card {
+    min-height: 400px !important;
   }
 }
 
@@ -1801,7 +1846,10 @@ main {
     min-height: 180px;
   }
   .portfolio_card {
-    min-height: 450px !important;
+    min-height: 320px !important;
+  }
+  .portfolio_card_info a i {
+    font-size: 28px;
   }
 }
 
@@ -1837,6 +1885,9 @@ main {
   .portfolio_card {
     min-height: 230px !important;
   }
+  .portfolio_con .portfolio_top_con {
+    padding: 0;
+}
 }
 
 @media screen and (max-width: 450px) {
@@ -1849,6 +1900,33 @@ main {
   .portfolio_card .portfolio_card_info {
     padding: 15px 40px 15px 15px;
   }
+  .portfolio_card {
+    min-height: 170px !important;
+  }
+
+  #portfolio .portfolio_card_info .heading_2 {
+       font-size: 14px !important;
+   }
+
+  #portfolio .portfolio_card_info .heading_3 {
+       font-size: 12px !important;
+  }
+
+.portfolio_card_info a {
+   height: 25px;
+   width: 25px;
+  }
+   .portfolio_card_info a i {
+       font-size: 18px;
+   }
+   .portfolio_top_con p span {
+    font-size: 28px;
+}
+.portfolio_top_con p {
+  flex: 1 1 100%;
+  min-height: auto;
+  padding: 25px;
+}
 }
 
 @media screen and (max-width: 412px) {
@@ -1875,10 +1953,41 @@ main {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .portfolio_card {
+    min-height: 155px !important;
+  }
+  .portfolio_card .portfolio_card_info {
+    left: 10px;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .portfolio_card .portfolio_card_info {
+    left: 2px;
+}
+.portfolio_top_con p {
+  font-size: 13px;
+}
+.portfolio_top_con p span {
+  font-size: 24px;
+}
+}
+
+
 @media screen and (max-width: 370px) {
   #footer_sec .footer_bottom .footer_bottom_right .social-icons a {
     margin-right: 8px;
   }
+  #portfolio .portfolio_card_info .heading_3 {
+    font-size: 10px !important;
+  }
+  #portfolio .portfolio_card_info .heading_2 {
+    font-size: 12px !important;
+  }
+  .hero_form_con h3 {
+    padding-right: 30px;
+}
 }
 
 /* Responsiveness End */
