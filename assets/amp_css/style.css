@@ -242,6 +242,9 @@ main {
   gap: 10px;
   margin-top: 15px;
 }
+.hero_left ul li>img{
+  width: 20px;
+}
 
 .hero_left ul li p {
   line-height: 1.1;
